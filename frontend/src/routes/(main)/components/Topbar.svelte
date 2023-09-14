@@ -15,7 +15,7 @@
 		if (user && user.avatar)
 			avatar = getFileUrl({
 				collectionId: user.collectionId,
-				recoreId: user.id,
+				recordId: user.id,
 				filename: user.avatar
 			})
 

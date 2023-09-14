@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { enhance } from '$app/forms'
+	import { applyAction, enhance } from '$app/forms'
 	import { pocketbase } from '$lib'
 	import Icon from '@iconify/svelte'
 	import logout from '@iconify/icons-tabler/logout'
@@ -23,6 +23,8 @@
 				pocketbase.authStore.clear()
 				toastStore.trigger(logoutToast)
 			}
+
+			await applyAction(result)
 		}}>
 	<button
 		type="submit"
