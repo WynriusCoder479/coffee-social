@@ -4,7 +4,7 @@ import { twMerge } from 'tailwind-merge'
 
 interface URLPart {
 	collectionId: string
-	recoreId: string
+	recordId: string
 	filename: string
 	thumb?: string
 }
@@ -13,8 +13,8 @@ export const cn = (...inputs: ClassValue[]) => twMerge(clsx(inputs))
 
 export const getFileUrl = ({
 	collectionId,
-	recoreId,
+	recordId,
 	filename,
 	thumb = '0x0'
 }: URLPart) =>
-	`${PUBLIC_POCKETBASE_URL}/api/files/${collectionId}/${recoreId}/${filename}?thumb=${thumb}`
+	`${PUBLIC_POCKETBASE_URL}/api/files/${collectionId}/${recordId}/${filename}?thumb=${thumb}`

@@ -21,7 +21,7 @@
 <label class="label w-fit cursor-pointer">
 	<span class="ml-4">{label}</span>
 	<div
-		class="w-32 h-32 overflow-hidden rounded-full border-4 border-primary-200-700-token">
+		class="w-32 h-32 overflow-hidden rounded-full border-2 border-surface-200-700-token">
 		{#if imageSrc === ''}
 			<div class="w-full h-full flex items-center justify-center">
 				<Icon

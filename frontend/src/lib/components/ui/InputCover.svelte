@@ -20,7 +20,8 @@
 
 <label class="label w-full cursor-pointer">
 	<span class="ml-4">{label}</span>
-	<div class="h-32 overflow-hidden border-4 border-primary-200-700-token">
+	<div
+		class="h-32 overflow-hidden rounded-md border-2 border-surface-200-700-token">
 		{#if imgSrc === ''}
 			<div class="w-full h-full flex items-center justify-center">
 				<Icon
