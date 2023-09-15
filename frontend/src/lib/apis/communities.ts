@@ -1,6 +1,18 @@
 import type { CommunitiesResponse, List, UsersResponse } from '$lib/types'
 import { http } from './axios'
 
+export const getCommunity = async ({
+	communityId
+}: {
+	communityId: string
+}) => {
+	const { data } = await http.get<
+		CommunitiesResponse<{ creator: UsersResponse }>
+	>(`/communities/${communityId}`)
+
+	return data
+}
+
 export const getUserSubscriptions = async ({
 	userId,
 	page = 1
