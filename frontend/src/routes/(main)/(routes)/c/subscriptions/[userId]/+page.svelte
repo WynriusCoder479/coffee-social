@@ -5,8 +5,7 @@
 	import loadingTwoToneLoop from '@iconify/icons-line-md/loading-twotone-loop'
 	import codePlus from '@iconify/icons-tabler/code-plus'
 	import { createInfiniteQuery } from '@tanstack/svelte-query'
-	import NoCommunity from '../../../components/NoCommunity.svelte'
-	import CommunityCard from '../../../components/CommunityCard.svelte'
+	import { CommunityCard, NoCommunity } from '$lib/components/communities'
 
 	let userId = $page.params.userId
 

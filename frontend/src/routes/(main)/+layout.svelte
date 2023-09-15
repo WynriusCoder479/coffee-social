@@ -1,9 +1,8 @@
 <script lang="ts">
+	import { LeftSidebar, Topbar } from '$lib/components/navbar'
 	import { scrollStore } from '$lib/stores'
 	import { AppShell } from '@skeletonlabs/skeleton'
 	import type { ComponentEvents } from 'svelte'
-	import Topbar from './components/Topbar.svelte'
-	import LeftSidebar from './components/LeftSidebar.svelte'
 
 	export let data
 
