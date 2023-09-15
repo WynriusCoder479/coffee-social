@@ -7,7 +7,7 @@
 	import quillPenLine from '@iconify/icons-ri/quill-pen-line'
 	import _ from 'lodash'
 	import type { AuthModel } from 'pocketbase'
-	import SignOutButton from './SignOutButton.svelte'
+	import { SignOutButton } from '.'
 
 	export let user: AuthModel | UsersResponse
 

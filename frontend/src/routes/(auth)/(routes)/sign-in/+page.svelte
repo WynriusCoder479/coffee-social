@@ -2,9 +2,8 @@
 	import { FormHeader } from '$lib/components/shared'
 	import arrowSmallLeft from '@iconify/icons-line-md/arrow-small-left'
 	import Icon from '@iconify/svelte'
-	import OAuthForm from '../../components/OAuthForm.svelte'
 	import { Divider } from '$lib/components/ui'
-	import SignInForm from '../../components/SignInForm.svelte'
+	import { OAuthForm, SignInForm } from '$lib/components/form/auth'
 
 	export let data
 
