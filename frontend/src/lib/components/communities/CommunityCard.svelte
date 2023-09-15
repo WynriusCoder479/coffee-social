@@ -44,7 +44,8 @@
 	})
 </script>
 
-<div class="relative rounded-md w-full lg:w-1/2 overflow-hidden">
+<div
+	class="relative rounded-md w-full lg:w-1/2 overflow-hidden drop-shadow-md hover:drop-shadow-xl transition-all ease-out duration-500">
 	<div
 		class="w-full bg-no-repeat"
 		style="background-image: url('{cover}'); background-size: cover;  background-position: center center; ">
@@ -99,11 +100,12 @@
 			</div>
 
 			<div class="flex flex-row gap-2 items-center">
-				<p>Subscriber :</p>
+				<p class="font-bold text-surface-50">Subscriber :</p>
 				<div class="flex -space-x-4 hover:space-x-0">
 					{#if $communitySubscribersQuery.isSuccess}
 						{#each $communitySubscribersQuery.data.subscribers.items as subscriber}
 							<Avatar
+								cursor="cursor-pointer"
 								src={getFileUrl({
 									collectionId: subscriber.collectionId,
 									recordId: subscriber.id,
@@ -114,6 +116,7 @@
 								width="w-8" />
 						{/each}
 						<Avatar
+							cursor="cursor-pointer"
 							width="w-8"
 							border="border-2 border-primary-300-600-token"
 							background="bg-surface-100-800-token"
